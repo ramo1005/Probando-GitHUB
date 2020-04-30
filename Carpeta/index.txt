@@ -1,4 +1,4 @@
-Mini Biografia.txt
+Esta es Mi Biografia.txt
 Hola me llamo Ramon Antonio Melo Olivero
 tengo 18 anos de edad :D
 probando merge por primera vez
