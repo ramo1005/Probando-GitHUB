@@ -1,0 +1,192 @@
+#Reto_1
+def reto1():
+
+    for i in range (8):
+        curso=input("Cual es tu curso favorito:")
+        print("Tu curso numero#{} es: {}".format(i+1,curso))
+
+    input("Hasta luego! pulse enter para salir...")
+    exit()
+            
+
+if __name__ == "__main__":
+    reto1()
+
+#Reto_2
+def reto2():
+
+    opcion=int(input("Cuantos cursos de platzi te gustan?:"))
+    if opcion>0:
+        for i in range (opcion):
+            curso=input("Cual es tu curso favorito:")
+            print("Tu curso numero#{} es: {}".format(i+1,curso))
+
+    input("Hasta luego! pulse enter para salir...")
+    exit()
+            
+
+if __name__ == "__main__":
+    reto2()
+
+#Reto_3
+def reto3():
+
+    curso=input("Cual es tu curso favorito:")
+    for letter in curso:
+        print(letter)
+
+    input("Hasta luego! pulse enter para salir...")
+    exit()
+            
+
+if __name__ == "__main__":
+    reto3()
+
+#Reto_4
+def reto4():
+
+    animal=input("Cual es tu animal favorito:")
+
+    for letter in animal:
+        print(letter)
+    salir()
+    
+    
+def salir():
+    opcion=int(input("Salir del programa(1) Repetir (2):"))
+
+    if opcion==1:
+        input("Hasta luego! pulse enter para salir...")
+        exit()
+
+    elif opcion==2:
+        reto4()
+
+    else:
+        input("Error!!! Enter para Continuar..")
+        salir()
+
+            
+
+if __name__ == "__main__":
+    reto4()
+
+#Reto_5
+def reto5():
+
+    numero=int(input("Ingrese un Numero:"))
+
+    for i in range(1,11):
+        resultado=i*numero
+        print("{}x{}={}".format(numero,i,resultado))
+
+
+if __name__ == "__main__":
+    reto5()
+
+#Reto_6
+def reto6():
+
+    numero=int(input("Ingrese un Numero:"))
+    print("Cuenta Regresiva..")
+
+    if numero>0:
+        for i in range(numero+1):
+            print(numero)
+            numero-=1
+        print("Fin!")
+        
+    else:
+        for a in range(numero,1):
+            print(numero)
+            numero+=1
+        print("Fin!")
+
+if __name__ == "__main__":
+    reto6()
+
+#Reto_7
+def reto7():
+
+    opcion=int(input("Cuantos cursos de platzi te gustan?:"))
+    if opcion>=15:
+        print("Son demasiados cursos!!!")
+        reto7()
+    elif opcion>0:
+        for i in range (opcion):
+            curso=input("Cual es tu curso favorito:")
+            print("Tu curso numero#{} es: {}".format(i+1,curso))
+    
+
+    input("Hasta luego! pulse enter para salir...")
+    exit()
+            
+
+if __name__ == "__main__":
+    reto7()
+
+#Reto_8
+def reto8():
+
+    lista_de_numeros=[]
+    resultado=0
+
+    print("La lista solo almacena 4 Numeros..")
+
+    for i in range(4):
+        numeros=int(input("Ingresa el numero#{} de la lista:".format(i+1)))
+        lista_de_numeros.append(numeros)
+    opcion=int(input("Sumar(1) Salir(2):"))
+
+    if opcion==1:
+        for i in lista_de_numeros:
+            resultado+=i
+        print("Total:"+str(resultado))
+
+    else:
+        input("Hasta luego! pulse enter para salir...")
+        exit()
+    
+            
+
+if __name__ == "__main__":
+    reto8()
+
+#Reto_9
+def reto9():
+
+    lista_de_numeros=[]
+
+    print("Recta numerica..")
+    opcion=input("positiva o negativa?:")
+
+    if opcion=="positiva":
+        limite=int(input("Limite:"))
+        if limite>0:
+         for i in range (limite+1):
+             lista_de_numeros.append(i)
+         print(lista_de_numeros)
+
+        else:
+            input("Numero fuera de rango.. Enter para continuar")
+            reto9()
+
+    elif opcion=="negativa":
+        limite=int(input("Limite:"))
+
+        if limite>0:
+            input("Numero fuera de rango.. Enter para continuar")
+            reto9()
+        else:
+            for i in range (limite,1):
+                lista_de_numeros.append(i)
+            print(lista_de_numeros)
+
+    else:
+        input("Opcion invalida Hasta luego! pulse enter para salir...")
+        exit()
+    
+            
+
+if __name__ == "__main__":
+    reto9()
